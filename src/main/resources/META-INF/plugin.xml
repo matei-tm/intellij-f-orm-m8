@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>fOrmM8.fOrmM8Generator</id>
+    <name>Flutter ORM M8 Generator</name>
+    <vendor email="support@f-orm-m8.info" url="https://www.f-orm-m8.info">f-orm-m8</vendor>
+
+    <description><![CDATA[
+    Generator for<br>
+    <em>orm-m8</em> framework fixture.
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
