@@ -19,6 +19,14 @@
     </extensions>
 
     <actions>
-        <!-- Add your actions here -->
+        <group id="fOrmM8Generator.TopMenu"
+               text="f-orm-m_8"
+               description="f-orm-m8 Generator Toolbar Menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="fOrmM8Generator.Generate"
+                    class="OrmM8GenerateAction"
+                    text="_Generate"
+                    description="Generate fixture"/>
+        </group>
     </actions>
 </idea-plugin>
