@@ -7,8 +7,8 @@ import com.intellij.notification.NotificationType
 class OrmM8GenerateAction: AnAction() {
 
     override fun actionPerformed(e: AnActionEvent) {
-        val noti = NotificationGroup("fOrmM8Generator", NotificationDisplayType.BALLOON, true)
-        noti.createNotification("M8 Title",
+        val notificationGroup = NotificationGroup("fOrmM8Generator", NotificationDisplayType.BALLOON, true)
+        notificationGroup.createNotification("M8 Title",
             "M8 Message",
             NotificationType.INFORMATION,
             null
