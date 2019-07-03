@@ -23,7 +23,7 @@ class OrmM8GenerateAction : AnAction() {
         val accountRelatedModels = inputNewModels(
             project,
             "DbAccountRelatedEntity: Input your ACCOUNT RELATED model name in PascalCase.",
-            "New Independent model"
+            "New Account related model"
         )
 
         val indieModelsString = independentModels.joinToString(",")
