@@ -25,7 +25,7 @@
             <add-to-group group-id="MainMenu" anchor="last"/>
             <action id="fOrmM8Generator.Generate"
                     class="OrmM8GenerateAction"
-                    text="_Generate"
+                    text="_Generate Sqlite Fixture"
                     description="Generate fixture"/>
             <action id="fOrmM8Generator.Regenerate"
                     class="OrmM8RegenerateAction"

@@ -25,10 +25,14 @@ class OrmM8GenerateAction : AnAction() {
             "DbAccountRelatedEntity: Input your ACCOUNT RELATED model name in PascalCase.",
             "New Independent model"
         )
+
+        val indieModelsString = independentModels.joinToString(",")
+        val accountRelatedModelsString = accountRelatedModels.joinToString(",")
+
         val notificationGroup = NotificationGroup("fOrmM8Generator", NotificationDisplayType.BALLOON, true)
         notificationGroup.createNotification(
-            "M8 Title",
-            "M8 Message",
+            "M8 Need Help to implement these",
+            "<b>Independent models:</b> $indieModelsString <br><b>Account related models:</b> $accountRelatedModelsString \n",
             NotificationType.INFORMATION,
             null
         ).notify(e.project)
@@ -53,14 +57,6 @@ class OrmM8GenerateAction : AnAction() {
             }
         } while (modelName != null)
 
-        val answeredModels = modelsList.joinToString(",")
-        Messages.showMessageDialog(
-            project,
-            "We need help to generate models: $answeredModels!\n.",
-            "Information",
-            Messages.getInformationIcon()
-
-        )
         return modelsList
     }
 }
