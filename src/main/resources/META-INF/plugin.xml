@@ -27,6 +27,14 @@
                     class="OrmM8GenerateAction"
                     text="_Generate"
                     description="Generate fixture"/>
+            <action id="fOrmM8Generator.Regenerate"
+                    class="OrmM8RegenerateAction"
+                    text="_Regenerate"
+                    description="Regenerate fixture"/>
         </group>
+<!--        <action id="MyPlugin.MyAction" class="MyActionClass" text="My_Item"-->
+<!--                description="The action implemented by MyActionClass class">-->
+<!--            <add-to-group group-id="<anonymous-group-28>" anchor="after" relative-to-action="Dart.build"/>-->
+<!--        </action>-->
     </actions>
 </idea-plugin>
